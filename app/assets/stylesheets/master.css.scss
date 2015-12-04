@@ -53,6 +53,7 @@ h2 {
 .links a {
   color:black;
   font-size: 25px;
+  padding: 5px;
   border-bottom: 1px solid #dfdfdf;
   font-family: 'encode_sansregular', sans-serif;
   font-weight: bold;
@@ -60,6 +61,11 @@ h2 {
 
 header {
   border-top: 9px solid #222222;
+}
+
+.logo:hover {
+  text-decoration: none;
+
 }
 
 hr {
