@@ -32,6 +32,10 @@ h2 {
   font-family: 'encode_sansregular', sans-serif;
   font-style: italic;
 }
+h2 span {
+  color: #dddddd;
+  font-family: 'encode_sansregular', sans-serif;
+}
 
 .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
@@ -50,6 +54,10 @@ h2 {
   font-size: 12px;
 }
 
+.modal {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
 .links {
   padding-top:26px;
 }
@@ -57,10 +65,14 @@ h2 {
 .links a {
   color:black;
   font-size: 25px;
-  padding: 5px;
+  // padding: 5px;
   border-bottom: 1px solid #dfdfdf;
   font-family: 'encode_sansregular', sans-serif;
   font-weight: bold;
+}
+
+::selection {
+  background-color: #f84342;
 }
 
 header {
@@ -80,4 +92,11 @@ hr {
   color: #f84342;
   font-family: 'encode_sansregular', sans-serif;
   font-size: 20px;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+
 }

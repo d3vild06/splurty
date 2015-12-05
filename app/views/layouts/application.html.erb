@@ -12,22 +12,23 @@
       <%= link_to root_path, :class => 'logo' do %>
       <div class="circle">
         <br />
-        Less Excuses
+        When you
         <br />
-        MORE
+        want to
         <br />
-        Results
+        give up
       </div>
       <% end %>
     </div>
 
-    <div class="col-xs-4 slogan">
-      Splurting out unsolicited advice about fitness since 2015
+    <div class="col-xs-4 hidden-xs slogan">
+      Splurting out unsolicited advice about fitness motivation since 2015
     </div>
 
-    <div class="col-xs-5 links">
+    <div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
       <!-- Button trigger modal -->
       <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+      &nbsp;&nbsp;
       <%= link_to 'About', about_path %>
     </div>
   </header>
@@ -43,8 +44,9 @@
 
         <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-          <%= f.input :saying %>
-          <%= f.input :author %>
+          <%= f.input :saying, :label => "What is the quote you want to add?", :placeholder => "Pain is weakness leaving your body"%>
+          <br />
+          <%= f.input :author, :label => "Who is the author of the quote?", :placeholder => "Roberto Q" %>
         </div>
 
       <div class="modal-footer">
@@ -69,10 +71,10 @@
 
 <div class="footer">
   <div class="container">
-    <div class="col-xs-6">
+    <div class="col-xs-12 col-sm-6">
         <%= link_to "This isn't enough, I need more", root_path, :class => 'next-quote' %>
       </div>
-      <div class="col-xs-6 footer-blurb">
+      <div class="col-xs-12 col-sm-6 footer-blurb">
         Proudly hacked in Las Vegas, NV by <a href="http://sgtquezada.github.io">Roberto Quezada</a><br />
         Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
       </div>
